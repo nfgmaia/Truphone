@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "5d336a14-10ed-4bd7-88a6-8a177db3c2ac",
+		"name": "Truphone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"brand\": \"Samsung\",\r\n  \"name\": \"Galaxy S21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Devices",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Devices",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get device by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Devices/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Devices",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update device",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"brand\": \"New Brand\",\r\n  \"name\": \"New Name\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Devices/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Devices",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update partial device",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// JSON Patch is specified in RFC 6902 from the IETF.\r\n[\r\n    { \"op\": \"replace\", \"path\": \"name\", \"value\": \"patched name\" }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Devices/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Devices",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete device",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Devices/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Devices",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Devices/search?brand=iphone",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Devices",
+						"search"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "iphone"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

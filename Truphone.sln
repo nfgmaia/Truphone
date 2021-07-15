@@ -15,17 +15,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2633DFE1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truphone.Api", "src\Truphone.Api\Truphone.Api.csproj", "{A6CFF20B-2507-4259-9098-7E8CBD5EADE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Truphone.Database", "src\Truphone.Database\Truphone.Database.csproj", "{C9D32FDE-09CE-4F84-BF21-BECE1FFFD6C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truphone.Database", "src\Truphone.Database\Truphone.Database.csproj", "{C9D32FDE-09CE-4F84-BF21-BECE1FFFD6C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Truphone.Application", "src\Truphone.Application\Truphone.Application.csproj", "{52A0F2CE-01A6-4853-AA67-A4340D077C49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truphone.Application", "src\Truphone.Application\Truphone.Application.csproj", "{52A0F2CE-01A6-4853-AA67-A4340D077C49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Truphone.Domain", "src\Truphone.Domain\Truphone.Domain.csproj", "{77B29C86-CE41-4FE4-8819-31567A1333A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truphone.Domain", "src\Truphone.Domain\Truphone.Domain.csproj", "{77B29C86-CE41-4FE4-8819-31567A1333A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Truphone.UnitTests.Api", "tests\Truphone.UnitTests.Api\Truphone.UnitTests.Api.csproj", "{FCCD0489-68B0-40DE-BBDD-BE7B42DDA44A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truphone.UnitTests.Api", "tests\Truphone.UnitTests.Api\Truphone.UnitTests.Api.csproj", "{FCCD0489-68B0-40DE-BBDD-BE7B42DDA44A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Truphone.UnitTests.Application", "tests\Truphone.UnitTests.Application\Truphone.UnitTests.Application.csproj", "{7284675C-D4E4-4785-81EF-78D3DC53C368}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Truphone.UnitTests.Domain", "tests\Truphone.UnitTests.Domain\Truphone.UnitTests.Domain.csproj", "{D06EDFD7-F320-421A-A8F4-F82E350104B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Truphone.UnitTests.Core", "tests\Truphone.UnitTests.Core\Truphone.UnitTests.Core.csproj", "{7284675C-D4E4-4785-81EF-78D3DC53C368}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,10 +55,6 @@ Global
 		{7284675C-D4E4-4785-81EF-78D3DC53C368}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7284675C-D4E4-4785-81EF-78D3DC53C368}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7284675C-D4E4-4785-81EF-78D3DC53C368}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D06EDFD7-F320-421A-A8F4-F82E350104B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D06EDFD7-F320-421A-A8F4-F82E350104B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D06EDFD7-F320-421A-A8F4-F82E350104B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D06EDFD7-F320-421A-A8F4-F82E350104B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,7 +68,6 @@ Global
 		{77B29C86-CE41-4FE4-8819-31567A1333A3} = {F7221E03-DAE1-41C3-BBAE-39D61D73CA61}
 		{FCCD0489-68B0-40DE-BBDD-BE7B42DDA44A} = {2633DFE1-23DA-4FD9-BE00-2A6390D75C96}
 		{7284675C-D4E4-4785-81EF-78D3DC53C368} = {2633DFE1-23DA-4FD9-BE00-2A6390D75C96}
-		{D06EDFD7-F320-421A-A8F4-F82E350104B7} = {2633DFE1-23DA-4FD9-BE00-2A6390D75C96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3033699-2C60-4F91-AE66-FA5FFE4E6969}
